@@ -1,0 +1,57 @@
+<ion-content>
+  <ion-card class="cart">
+
+    <ion-card-header class="header">
+      <div class="image-container">
+        <img alt="Capital of Denmark"
+          src="https://cdn.dribbble.com/users/65377/screenshots/2309672/media/0c3e11356e69a7a242c3c5a8091818a5.png?resize=400x300&vertical=center" />
+      </div>
+      <ion-card-title>Copenhagen Adventure </ion-card-title>
+      <ion-card-subtitle>120DKK</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button expand="block" color="dark"> <ion-icon name="logo-apple"></ion-icon>Pay</ion-button>
+    <ion-button expand="block" fill="outline" color="medium">Or pay with card</ion-button>
+
+
+    <ion-card-content class="form">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email margin-bottom" fill="outline"></ion-input>
+      <ion-row style="height: 8px"></ion-row>
+      <ion-label position="floating">Card Information</ion-label>
+      <div class="input-box-1">
+        <ion-input placeholder="Number" maxlength="16"></ion-input>
+        <div class="icon-box">
+          <ion-icon src="../assets/visa.svg"></ion-icon>
+          <ion-icon src="../assets/mastercard.svg"></ion-icon>
+          <ion-icon src="../assets/amex.svg"></ion-icon>
+          <ion-icon src="../assets/discover.svg"></ion-icon>
+
+        </div>
+      </div>
+
+      <div class="input-box-2">
+        <ion-input display="in-line" type="date" placeholder="MM/YY"></ion-input>
+        <div class="cvc-box">
+          <ion-input type="CVC" placeholder="CVC" maxlength="3"></ion-input>
+          <ion-icon src="../assets/cvc.svg"></ion-icon>
+        </div>
+      </div>
+      <ion-row style="height: 8px"></ion-row>
+      <ion-label position="floating">Country or Region</ion-label>
+
+      <ion-select placeholder="Select Region">
+        <ion-select-option>United States</ion-select-option>
+        <ion-select-option>Europe</ion-select-option>
+        <ion-select-option>South America</ion-select-option>
+        <ion-select-option>Australia/New Zeland</ion-select-option>
+      </ion-select>
+
+      <ion-input fill="outline" placeholder="ZIP"></ion-input>
+
+    </ion-card-content>
+    <ion-row style="height: 8px"></ion-row>
+    <ion-button expand="block" color="dark">Pay</ion-button>
+    <ion-row style="height: 12px"></ion-row>
+  </ion-card>
+
+</ion-content>
